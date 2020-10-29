@@ -394,6 +394,20 @@ namespace AngleSharp.Dom
         }
 
         /// <inheritdoc />
+        public bool IsButtonWarm  {
+            get => ElementState?.IsButtonWarm ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsButtonUnprimed  {
+            get => ElementState?.IsButtonUnprimed ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsUnhover {
+            get => ElementState?.IsUnhover ?? false;
+        }
+        /// <inheritdoc />
         public IElementState ElementState {
             get;
             set;

@@ -243,6 +243,21 @@
         /// </summary>
         public static readonly String ButtonCold = "button-cold";
 
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String Unhover = "unhover";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonUnprimed = "button-unprimed";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonWarm = "button-warm";
+
 
         /// End Custom Classes Ryan Cleven
         /// <summary>

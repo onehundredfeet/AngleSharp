@@ -113,5 +113,20 @@ public interface IElementState {
     /// </summary>
     bool IsButtonDenied { get; }
 
+    /// <summary>
+    /// Returns true if the thing the element represents is being hidden
+    /// </summary>
+    bool IsButtonWarm { get; }
+
+    /// <summary>
+    /// Returns true if the thing the element represents is being hidden
+    /// </summary>
+    bool IsButtonUnprimed { get; }
+
+    /// <summary>
+    /// Returns true if the thing the element represents is being hidden
+    /// </summary>
+    bool IsUnhover { get; }
+
 }
 }

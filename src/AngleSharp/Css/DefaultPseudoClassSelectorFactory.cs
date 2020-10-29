@@ -61,6 +61,9 @@ namespace AngleSharp.Css
             { PseudoClassNames.ButtonActioned, new PseudoClassSelector(el => el.IsButtonActioned, PseudoClassNames.ButtonActioned) },
             { PseudoClassNames.ButtonCanceled, new PseudoClassSelector(el => el.IsButtonCanceled, PseudoClassNames.ButtonCanceled) },
             { PseudoClassNames.ButtonDenied, new PseudoClassSelector(el => el.IsButtonDenied, PseudoClassNames.ButtonDenied) },
+            { PseudoClassNames.Unhover, new PseudoClassSelector(el => el.IsUnhover, PseudoClassNames.Unhover) },
+            { PseudoClassNames.ButtonUnprimed, new PseudoClassSelector(el => el.IsButtonUnprimed, PseudoClassNames.ButtonUnprimed) },
+            { PseudoClassNames.ButtonWarm, new PseudoClassSelector(el => el.IsButtonUnprimed, PseudoClassNames.ButtonWarm) },
 // End Custom
             { PseudoElementNames.Before, new PseudoClassSelector(el => el.IsPseudo(PseudoElementNames.Before), PseudoElementNames.Before) },
             { PseudoElementNames.After, new PseudoClassSelector(el => el.IsPseudo(PseudoElementNames.After), PseudoElementNames.After) },

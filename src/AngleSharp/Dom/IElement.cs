@@ -355,6 +355,23 @@ namespace AngleSharp.Dom
 
 
         /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsUnhover { get; }
+
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonUnprimed { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonWarm { get; }
+
+
+        /// <summary>
         /// Implements state for pseudo classes
         /// </summary>
         IElementState ElementState { get; set; }
