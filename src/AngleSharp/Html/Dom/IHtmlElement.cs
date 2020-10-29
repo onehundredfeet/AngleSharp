@@ -67,13 +67,7 @@ namespace AngleSharp.Html.Dom
         /// </summary>
         [DomName("isContentEditable")]
         Boolean IsContentEditable { get; }
-
-        /// <summary>
-        /// Gets or sets if the element is hidden.
-        /// </summary>
-        [DomName("hidden")]
-        Boolean IsHidden { get; set; }
-
+        
         /// <summary>
         /// Gets or sets if the element is draggable.
         /// </summary>

@@ -443,13 +443,6 @@ namespace AngleSharp.Html.Dom
         #region Properties
 
         /// <inheritdoc />
-        public Boolean IsHidden
-        {
-            get => this.GetBoolAttribute(AttributeNames.Hidden);
-            set => this.SetBoolAttribute(AttributeNames.Hidden, value);
-        }
-
-        /// <inheritdoc />
         public IHtmlMenuElement ContextMenu
         {
             get

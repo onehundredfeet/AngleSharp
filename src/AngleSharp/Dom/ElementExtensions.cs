@@ -206,16 +206,7 @@ namespace AngleSharp.Dom
         /// <returns>The namespace url for the prefix.</returns>
         public static String GetCssNamespace(this IElement el, String prefix) => el.Owner?.StyleSheets.LocateNamespace(prefix) ?? el.LocateNamespaceFor(prefix);
 
-        /// <summary>
-        /// Checks if the element is currently hovered.
-        /// </summary>
-        /// <param name="element">The element to check.</param>
-        /// <returns>True if the element is currently hovered, otherwise false.</returns>
-        public static Boolean IsHovered(this IElement element)
-        {
-            //TODO Connection to Visual Tree ?
-            return false;
-        }
+
 
         /// <summary>
         /// Checks if the element is the only of its type among the parent's children.
@@ -338,7 +329,8 @@ namespace AngleSharp.Dom
                 return String.IsNullOrEmpty(isDisabled);
             }
 
-            return false;
+
+            return element.ElementState?.IsEnabled ?? false;
         }
 
         /// <summary>
@@ -374,7 +366,7 @@ namespace AngleSharp.Dom
                 return !String.IsNullOrEmpty(isDisabled);
             }
 
-            return false;
+            return element.ElementState?.IsDisabled ?? false;
         }
 
         /// <summary>
@@ -419,7 +411,7 @@ namespace AngleSharp.Dom
                 return !String.IsNullOrEmpty(value);
             }
 
-            return false;
+            return element.ElementState?.IsDefault ?? false;;
         }
 
         /// <summary>
@@ -589,7 +581,7 @@ namespace AngleSharp.Dom
                 return !String.IsNullOrEmpty(href) && link.IsVisited;
             }
 
-            return false;
+            return element.ElementState?.IsVisited ?? false;
         }
 
         /// <summary>

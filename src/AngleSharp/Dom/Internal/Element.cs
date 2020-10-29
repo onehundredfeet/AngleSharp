@@ -293,7 +293,7 @@ namespace AngleSharp.Dom
         /// <inheritdoc />
         public Boolean IsFocused
         {
-            get => Object.ReferenceEquals(Owner?.FocusElement, this);
+            get => ElementState?.IsFocused ?? Object.ReferenceEquals(Owner?.FocusElement, this);
             protected set
             {
                 var document = Owner;
@@ -313,6 +313,91 @@ namespace AngleSharp.Dom
             }
         }
 
+        /// <inheritdoc />
+        public Boolean IsHovered {
+            get => ElementState?.IsHovered ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsVisible  {
+            get => ElementState?.IsVisible ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsHidden {
+            get => ElementState?.IsHidden ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsPrimaryDown {
+            get => ElementState?.IsPrimaryDown ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsPrimaryDownEdge {
+            get => ElementState?.IsPrimaryDownEdge ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsPrimaryUp {
+            get => ElementState?.IsPrimaryUp ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsPrimaryUpEdge {
+            get => ElementState?.IsPrimaryUpEdge ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsSecondaryDown{
+            get => ElementState?.IsSecondaryDown ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsSecondaryDownEdge{
+            get => ElementState?.IsSecondaryDownEdge ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsSecondaryUp {
+            get => ElementState?.IsSecondaryUp ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsSecondaryUpEdge {
+            get => ElementState?.IsSecondaryUpEdge ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsButtonCold {
+            get => ElementState?.IsButtonCold ?? false;
+        }
+
+        /// <inheritdoc />
+        public Boolean IsButtonPrimed {
+            get => ElementState?.IsButtonPrimed ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsButtonActioned {
+            get => ElementState?.IsButtonActioned ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsButtonDenied {
+            get => ElementState?.IsButtonDenied ?? false;
+        }
+
+        /// <inheritdoc />
+        public bool IsButtonCanceled  {
+            get => ElementState?.IsButtonCanceled ?? false;
+        }
+
+        /// <inheritdoc />
+        public IElementState ElementState {
+            get;
+            set;
+        }
         #endregion
 
         #region Methods

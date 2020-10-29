@@ -4,7 +4,7 @@ namespace AngleSharp.Dom
     using System;
 
     /// <summary>
-    /// The Element interface represents an object within a DOM document. 
+    /// The Element interface represents an object within a DOM document.
     /// </summary>
     [DomName("Element")]
     public interface IElement : INode, IParentNode, IChildNode, INonDocumentTypeChildNode
@@ -272,6 +272,92 @@ namespace AngleSharp.Dom
         /// Gets if the element is currently focused.
         /// </summary>
         Boolean IsFocused { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsHovered { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsVisible { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsHidden { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsPrimaryDown { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsPrimaryDownEdge { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsPrimaryUp { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsPrimaryUpEdge { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsSecondaryDown { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsSecondaryDownEdge { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsSecondaryUp { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsSecondaryUpEdge { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonCold { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonPrimed { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonActioned { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonCanceled { get; }
+
+        /// <summary>
+        /// Gets if the element is currently focused.
+        /// </summary>
+        Boolean IsButtonDenied { get; }
+
+
+        /// <summary>
+        /// Implements state for pseudo classes
+        /// </summary>
+        IElementState ElementState { get; set; }
 
         /// <summary>
         /// Gets the source reference if available.

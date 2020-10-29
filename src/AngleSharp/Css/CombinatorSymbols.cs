@@ -43,6 +43,24 @@
         public static readonly String InText = "*=";
 
         /// <summary>
+        /// The ">" attribute combinator.
+        /// </summary>
+        public static readonly String GreaterThan = ">";
+        /// <summary>
+        /// The ">=" attribute combinator.
+        /// </summary>
+        public static readonly String GreaterThanOrEqual = ">=";
+
+        /// <summary>
+        /// The "less than" attribute combinator.
+        /// </summary>
+        public static readonly String LessThan = "<";
+        /// <summary>
+        /// The "less than or equal" attribute combinator.
+        /// </summary>
+        public static readonly String LessThanOrEqual = "<=";
+
+        /// <summary>
         /// The "||" combinator.
         /// </summary>
         public static readonly String Column = "||";

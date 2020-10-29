@@ -167,6 +167,84 @@
         /// </summary>
         public static readonly String Shadow = "shadow";
 
+        /// Custom Classes Ryan Cleven
+        /// <summary>
+        /// The visible pseudo class.
+        /// </summary>
+        public static readonly String Visible = "visible";
+
+        /// <summary>
+        /// The hidden pseudo class.
+        /// </summary>
+        public static readonly String Hidden = "hidden";
+
+        /// <summary>
+        /// The primary-down pseudo class.
+        /// </summary>
+        public static readonly String PrimaryDown = "primary-down";
+
+        /// <summary>
+        /// The primary-down-edge pseudo class.
+        /// </summary>
+        public static readonly String PrimaryDownEdge = "primary-down-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String PrimaryUp = "primary-up";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String PrimaryUpEdge = "primary-up-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String SecondaryDown = "secondary-down";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String SecondaryDownEdge = "secondary-down-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String SecondaryUp = "secondary-up";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String SecondaryUpEdge = "secondary-up-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonPrimed = "button-primed";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonActioned = "button-actioned-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonCanceled = "button-canceled-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonDenied = "button-denied-edge";
+
+        /// <summary>
+        /// The shadow pseudo class.
+        /// </summary>
+        public static readonly String ButtonCold = "button-cold";
+
+
+        /// End Custom Classes Ryan Cleven
         /// <summary>
         /// The dir pseudo function.
         /// </summary>
