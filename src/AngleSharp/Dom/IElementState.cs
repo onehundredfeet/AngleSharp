@@ -128,5 +128,9 @@ public interface IElementState {
     /// </summary>
     bool IsUnhover { get; }
 
+    /// <summary>
+    /// Returns true if the thing the element represents has an extended state known to the system
+    /// </summary>
+    bool IsEnumeratedState( long state );
 }
 }

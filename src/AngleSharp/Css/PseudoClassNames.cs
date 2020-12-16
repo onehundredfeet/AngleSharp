@@ -226,17 +226,17 @@
         /// <summary>
         /// The shadow pseudo class.
         /// </summary>
-        public static readonly String ButtonActioned = "button-actioned-edge";
+        public static readonly String ButtonActioned = "button-actioned";
 
         /// <summary>
         /// The shadow pseudo class.
         /// </summary>
-        public static readonly String ButtonCanceled = "button-canceled-edge";
+        public static readonly String ButtonCanceled = "button-canceled";
 
         /// <summary>
         /// The shadow pseudo class.
         /// </summary>
-        public static readonly String ButtonDenied = "button-denied-edge";
+        public static readonly String ButtonDenied = "button-denied";
 
         /// <summary>
         /// The shadow pseudo class.
